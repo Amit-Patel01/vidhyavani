@@ -65,8 +65,12 @@ export default function Header() {
           
           {/* Logo & Brand */}
           <Link href="/" className="flex items-center space-x-3 group">
-            <div className="w-11 h-11 rounded-xl bg-gradient-to-tr from-amber-500 to-amber-400 flex items-center justify-center shadow-md shadow-amber-500/20 group-hover:scale-105 transition-transform duration-300">
-              <BookOpen className="w-6 h-6 text-slate-950 font-bold" />
+            <div className="w-12 h-12 rounded-2xl overflow-hidden shadow-md shadow-amber-500/20 group-hover:scale-105 transition-transform duration-300 border border-amber-200 bg-white p-0.5 shrink-0">
+              <img
+                src="/images/logo.png"
+                alt="વિદ્યા વાણી એપ લોગો"
+                className="w-full h-full object-contain"
+              />
             </div>
             <div className="flex flex-col">
               <span className="text-xl sm:text-2xl font-black tracking-tight text-slate-900 flex items-center gap-1.5">

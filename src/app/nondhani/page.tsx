@@ -59,8 +59,12 @@ export default function NondhaniPage() {
       
       {/* Brand Icon Header */}
       <div className="text-center space-y-3">
-        <div className="w-16 h-16 mx-auto rounded-2xl bg-gradient-to-tr from-amber-500 to-amber-400 flex items-center justify-center shadow-md shadow-amber-500/20">
-          <BookOpen className="w-8 h-8 text-slate-950 font-bold" />
+        <div className="w-20 h-20 mx-auto rounded-3xl overflow-hidden shadow-lg shadow-amber-500/20 border border-amber-200 bg-white p-1">
+          <img
+            src="/images/logo.png"
+            alt="વિદ્યા વાણી લોગો"
+            className="w-full h-full object-contain"
+          />
         </div>
         <h1 className="text-3xl font-black text-slate-900">
           નવું વિદ્યાર્થી ખાતું બનાવો
