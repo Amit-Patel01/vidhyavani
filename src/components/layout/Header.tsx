@@ -81,17 +81,12 @@ export default function Header() {
                 className="w-full h-full object-contain"
               />
             </div>
-            <div className="flex flex-col whitespace-nowrap">
-              <div className="flex items-center gap-1.5">
-                <span className="text-lg sm:text-xl font-black tracking-tight text-slate-900 leading-none">
-                  વિદ્યા વાણી
-                </span>
-                <span className="text-[10px] sm:text-xs font-bold px-1.5 py-0.5 rounded-full bg-amber-100 text-amber-800 border border-amber-300 leading-none">
-                  એપ
-                </span>
-              </div>
-              <span className="text-[10px] sm:text-[11px] text-amber-700 font-bold mt-0.5 leading-none">
-                શિક્ષક: વર્ષા જાની દવે
+            <div className="flex items-center gap-1.5 whitespace-nowrap">
+              <span className="text-xl sm:text-2xl font-black tracking-tight text-slate-900 leading-none">
+                વિદ્યા વાણી
+              </span>
+              <span className="text-xs font-bold px-2 py-0.5 rounded-full bg-amber-100 text-amber-800 border border-amber-300 leading-none">
+                એપ
               </span>
             </div>
           </Link>
