@@ -23,7 +23,7 @@ export default function YoutubeSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header with YouTube branding */}
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-6 mb-12 p-8 rounded-3xl bg-white border border-rose-200 shadow-lg">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-6 mb-12 p-8 rounded-3xl bg-white border border-rose-200 shadow-md">
           <div className="flex items-center space-x-5 text-center lg:text-left">
             <div className="w-16 h-16 rounded-2xl bg-rose-600 flex items-center justify-center text-white shadow-md shadow-rose-600/30 shrink-0">
               <Youtube className="w-10 h-10" />
@@ -37,18 +37,13 @@ export default function YoutubeSection() {
                 વિદ્યા વાણી યૂટ્યુબ ચેનલ
               </h2>
               <p className="text-xs sm:text-sm text-slate-600 mt-1">
-                ૫૦,૦૦૦+ વિદ્યાર્થીઓ સાથે મફત વિડિઓ લેક્ચર્સ દ્વારા રોજ નવું શીખો.
+                મફત વિડિઓ લેક્ચર્સ અને માર્ગદર્શન સત્રો દ્વારા સરળતાથી અભ્યાસ કરો.
               </p>
             </div>
           </div>
 
           {/* Subscribe Action */}
           <div className="flex flex-wrap items-center gap-4">
-            <div className="px-4 py-2 rounded-xl bg-slate-50 border border-slate-200 text-center">
-              <span className="block text-base font-bold text-slate-900">૫૦,૦૦૦+</span>
-              <span className="text-[11px] text-slate-500 font-semibold">સબ્સ્ક્રાઇબર્સ</span>
-            </div>
-
             <a
               href="https://youtube.com"
               target="_blank"
@@ -56,7 +51,7 @@ export default function YoutubeSection() {
               className="flex items-center gap-2 px-6 py-3.5 rounded-xl bg-rose-600 hover:bg-rose-500 text-white font-bold text-sm shadow-md shadow-rose-600/30 transition-all duration-300 group"
             >
               <Youtube className="w-5 h-5" />
-              સબ્સ્ક્રાઇબ કરો
+              ચેનલ જુઓ & સબ્સ્ક્રાઇબ કરો
               <ExternalLink className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
             </a>
           </div>
@@ -67,7 +62,7 @@ export default function YoutubeSection() {
           <div className="flex items-center justify-between">
             <h3 className="text-xl sm:text-2xl font-bold text-slate-900 flex items-center gap-2">
               <Sparkles className="w-5 h-5 text-amber-600" />
-              લોકપ્રિય અને તાજેતરના વિડિઓ લેક્ચર્સ
+              વિડિઓ લેક્ચર્સ
             </h3>
             <Link
               href="/video-lecture"
@@ -82,7 +77,7 @@ export default function YoutubeSection() {
               <div
                 key={video.id}
                 onClick={() => setActiveVideo(video)}
-                className="group rounded-2xl bg-white border border-slate-200 hover:border-rose-300 p-4 shadow-sm hover:shadow-lg transition-all duration-300 cursor-pointer space-y-3"
+                className="group rounded-2xl bg-white border border-slate-200 hover:border-rose-300 p-4 shadow-xs hover:shadow-lg transition-all duration-300 cursor-pointer space-y-3"
               >
                 <div className="relative aspect-video rounded-xl overflow-hidden bg-slate-900">
                   <img

@@ -148,13 +148,14 @@ export default function ParikshaTaiyariPage() {
                     <h4 className="text-xs sm:text-sm font-bold text-slate-900 line-clamp-1">{paper.title}</h4>
                     <p className="text-[11px] text-slate-500">{paper.size} • {paper.year}</p>
                   </div>
-                  <button
-                    onClick={() => alert('મોડેલ પ્રશ્નપત્ર ડાઉનલોડ થઈ રહ્યું છે...')}
-                    className="p-2.5 rounded-xl bg-amber-50 hover:bg-amber-500 text-amber-800 hover:text-slate-950 font-bold text-xs transition-all shrink-0 ml-2 border border-amber-200 shadow-sm"
-                    title="પેપર ડાઉનલોડ કરો"
+                  <Link
+                    href={`/abhyas-nondho?dhoran=${selectedDhoran}`}
+                    className="p-2.5 rounded-xl bg-amber-50 hover:bg-amber-500 text-amber-800 hover:text-slate-950 font-bold text-xs transition-all shrink-0 ml-2 border border-amber-200 shadow-xs flex items-center gap-1"
+                    title="નોંધો જુઓ"
                   >
                     <Download className="w-4 h-4" />
-                  </button>
+                    <span>જુઓ</span>
+                  </Link>
                 </div>
               ))}
             </div>

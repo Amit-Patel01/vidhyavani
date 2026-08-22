@@ -5,8 +5,6 @@ import Link from 'next/link';
 import {
   Sparkles,
   BookOpen,
-  Youtube,
-  Award,
   CheckCircle,
   Play,
   ArrowRight,
@@ -17,8 +15,8 @@ export default function Hero() {
   return (
     <section className="relative overflow-hidden pt-8 pb-16 lg:pt-14 lg:pb-24 bg-white border-b border-slate-200/80">
       {/* Background Soft Glow effects */}
-      <div className="absolute top-0 right-1/4 w-[500px] h-[500px] bg-amber-100/50 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute top-20 left-10 w-[400px] h-[400px] bg-blue-50/70 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute top-0 right-1/4 w-[500px] h-[500px] bg-amber-100/40 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute top-20 left-10 w-[400px] h-[400px] bg-blue-50/60 rounded-full blur-3xl pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
@@ -27,9 +25,9 @@ export default function Hero() {
           <div className="lg:col-span-7 space-y-6 text-center lg:text-left">
             
             {/* Pill badge */}
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-amber-50 border border-amber-200 text-amber-900 text-xs sm:text-sm font-bold shadow-sm">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-amber-50 border border-amber-200 text-amber-900 text-xs sm:text-sm font-bold shadow-xs">
               <Sparkles className="w-4 h-4 text-amber-600" />
-              <span>ગુજરાતનું અગ્રણી ડિજિટલ શિક્ષણ પ્લેટફોર્મ</span>
+              <span>ડિજિટલ એજ્યુકેશન પ્લેટફોર્મ</span>
             </div>
 
             {/* Brand Title & Tagline */}
@@ -76,7 +74,7 @@ export default function Hero() {
 
               <Link
                 href="/youtube"
-                className="flex items-center gap-2 px-7 py-4 rounded-2xl bg-white hover:bg-slate-50 text-slate-900 font-bold text-base border border-slate-200 hover:border-rose-300 shadow-sm transition-all duration-300 group"
+                className="flex items-center gap-2 px-7 py-4 rounded-2xl bg-white hover:bg-slate-50 text-slate-900 font-bold text-base border border-slate-200 hover:border-rose-300 shadow-xs transition-all duration-300 group"
               >
                 <div className="w-6 h-6 rounded-full bg-rose-600 flex items-center justify-center group-hover:scale-110 transition-transform">
                   <Play className="w-3.5 h-3.5 fill-white text-white ml-0.5" />
@@ -85,27 +83,9 @@ export default function Hero() {
               </Link>
             </div>
 
-            {/* Quick Metrics */}
-            <div className="pt-6 flex items-center justify-center lg:justify-start gap-6 text-xs text-slate-500 border-t border-slate-100">
-              <div>
-                <strong className="text-slate-900 text-base block font-bold">૨૫,૦૦૦+</strong>
-                વિદ્યાર્થીઓ જોડાયેલા
-              </div>
-              <div className="w-px h-8 bg-slate-200" />
-              <div>
-                <strong className="text-amber-800 text-base block font-bold">૧૫+ વર્ષ</strong>
-                ભવ્ય શિક્ષણ અનુભવ
-              </div>
-              <div className="w-px h-8 bg-slate-200" />
-              <div>
-                <strong className="text-slate-900 text-base block font-bold">૫૦૦+</strong>
-                બોર્ડ ટોપર્સ
-              </div>
-            </div>
-
           </div>
 
-          {/* Right Column: Teacher Portrait Card with Floating Stats */}
+          {/* Right Column: Clean Teacher Portrait Card */}
           <div className="lg:col-span-5 relative flex justify-center">
             <div className="relative w-full max-w-md">
               
@@ -132,28 +112,6 @@ export default function Hero() {
                   </div>
                 </div>
 
-                {/* Floating pill 1: Board Experience */}
-                <div className="flex items-center gap-3 p-3.5 rounded-xl bg-slate-50 border border-slate-200">
-                  <div className="w-10 h-10 rounded-lg bg-amber-100 text-amber-800 flex items-center justify-center shrink-0">
-                    <Award className="w-5 h-5" />
-                  </div>
-                  <div>
-                    <p className="text-xs font-bold text-slate-900">ગુજરાત શિક્ષણ બોર્ડ શ્રેષ્ઠ શિક્ષક સન્માન</p>
-                    <p className="text-[11px] text-slate-500">૧૫+ વર્ષોથી હજારો વિદ્યાર્થીઓનું સફળ માર્ગદર્શન</p>
-                  </div>
-                </div>
-
-              </div>
-
-              {/* Floating Pill Bottom-Left */}
-              <div className="absolute -bottom-5 -left-4 sm:-left-6 p-3.5 rounded-2xl bg-white border border-slate-200 shadow-xl flex items-center gap-3 z-20">
-                <div className="w-9 h-9 rounded-xl bg-rose-600 flex items-center justify-center text-white shadow-sm">
-                  <Youtube className="w-5 h-5" />
-                </div>
-                <div>
-                  <p className="text-xs font-bold text-slate-900">૫૦,૦૦૦+ સબ્સ્ક્રાઇબર્સ</p>
-                  <p className="text-[10px] text-slate-500">વિદ્યા વાણી યૂટ્યુબ ચેનલ</p>
-                </div>
               </div>
 
             </div>
