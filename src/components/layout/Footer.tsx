@@ -147,31 +147,20 @@ export default function Footer() {
           <div className="space-y-4">
             <h3 className="text-slate-900 font-bold text-base border-b border-slate-200 pb-2 flex items-center gap-2">
               <Phone className="w-4 h-4 text-amber-600" />
-              સંપર્ક માહિતી
+              સંપર્ક કેન્દ્ર
             </h3>
-            <ul className="space-y-3 text-sm">
-              <li className="flex items-start space-x-2">
-                <MapPin className="w-4 h-4 text-amber-600 shrink-0 mt-1" />
-                <span>સેટેલાઇટ રોડ, અમદાવાદ, ગુજરાત</span>
-              </li>
-              <li className="flex items-center space-x-2">
-                <Phone className="w-4 h-4 text-amber-600 shrink-0" />
-                <span>+૯૧ ૯૮૭૬૫ ૪૩૨૧૦</span>
-              </li>
-              <li className="flex items-center space-x-2">
-                <Mail className="w-4 h-4 text-amber-600 shrink-0" />
-                <span>contact@vidhyavani.com</span>
-              </li>
-              <li className="pt-2">
-                <Link
-                  href="/sampark"
-                  className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-amber-50 text-amber-800 hover:bg-amber-500 hover:text-slate-950 font-bold text-xs transition-all border border-amber-200"
-                >
-                  <Send className="w-3.5 h-3.5" />
-                  સંદેશ મોકલો
-                </Link>
-              </li>
-            </ul>
+            <p className="text-xs text-slate-500 leading-relaxed">
+              અધિકૃત સંપર્ક વિગતો ટૂંક સમયમાં અહીં ઉપલબ્ધ થશે.
+            </p>
+            <div className="pt-2">
+              <Link
+                href="/sampark"
+                className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-amber-50 text-amber-800 hover:bg-amber-500 hover:text-slate-950 font-bold text-xs transition-all border border-amber-200 shadow-xs"
+              >
+                <Send className="w-3.5 h-3.5" />
+                સંદેશ / પૂછપરછ મોકલો
+              </Link>
+            </div>
           </div>
 
         </div>
